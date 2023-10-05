@@ -1,0 +1,28 @@
+.not-found{
+  margin-top: 5rem;
+  text-align:center
+}
+
+.favorite{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.style-Card {
+  margin: 1rem;
+ margin-bottom: 1rem;
+ 
+}
+
+
+.Navbar{
+  width: 100%;
+}
+
+.Likes{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%; 
+}
