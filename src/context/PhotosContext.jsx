@@ -17,7 +17,7 @@ const PhotosContextProvider = ({ children }) => {
       //console.log(data.photos);
       const myapiPhotos = data.photos.map((photo) => {
         return {
-          liked: false,
+          liked: false,//liked:photo.liked
           id: photo.id,
           alt: photo.alt,
           photographer: photo.photographer,
@@ -25,8 +25,8 @@ const PhotosContextProvider = ({ children }) => {
         };
       });
 
-      setPhotos(myapiPhotos.map((photo) => ({ ...photo, liked: false })));
-      console.log(myapiPhotos);
+      setPhotos(myapiPhotos.map((photo) => ({ ...photo, liked: false })));//aca no es necesario el liked:false , ya que lo sacamos de la api
+      //console.log(myapiPhotos);
     } catch (error) {
       console.log("Error al obtener la informacion", error);
     }

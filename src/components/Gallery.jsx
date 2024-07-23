@@ -30,7 +30,7 @@ const Gallery = () => {
           ) => (
             <Card style={{ width: "25rem" }} key={photo.id}>
               {/* key={i} */}
-              <IconHeart filled={photo.liked} /> {""}
+              <IconHeart filled={photo.liked} /> 
               <Card.Img
                 variant="top"
                 src={photo.img}
